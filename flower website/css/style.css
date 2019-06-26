@@ -25,6 +25,7 @@ body {
   overflow: hidden;
   letter-spacing: 2px;
   margin: 0 auto;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,18 +65,19 @@ p{
   opacity: 1;
 }
 
+/*dropdown menu will be hidden, I might use it in the future if JS is allowed*/
 .icon {
   display: none;
 }
 
 .fa-search {
   position: absolute;
-  left: 30px;
+  left: 70px;
 }
 
 .fa-shopping-cart {
   position: absolute;
-  right: 30px;
+  right: 70px;
 }
 
 /*navigation bar end*/
@@ -222,7 +224,7 @@ p{
   flex: 25%;
   max-width: 25%;
   padding: 0 15px;
-  height: 550px;
+  height: 600px;
 }
 
 .card {
@@ -371,11 +373,13 @@ footer h2 {
   .fa-search {
     position: absolute;
     top: 30px;
+    left: 30px;
   }
 
   .fa-shopping-cart {
     position: absolute;
     top: 30px;
+    right: 30px;
   }
   /*navigation icons end */
   /*3 small images*/
@@ -534,6 +538,41 @@ footer h2 {
   /*4 small images section, making them bigger for the big screen*/
   .card img {
     width: 100%;
+    height: 500px;
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 15px;
+    height: 700px;
+  }
+  /*4 small images section end*/
+
+  /*3small images*/
+  .image1 {
+    height: 600px;
+  }
+
+  .image2 {
+    height: 600px;
+  }
+
+  .image3 {
+    height: 600px;
+  }
+
+  .heading {
+    height: 200px;
+  }
+  /*3small images end*/
+}
+/*extra extra large screen adjustment, if you have this screen I am jealous*/
+@media (min-width: 2560px) {
+
+  /*4 small images section, making them bigger for the big screen*/
+  .card img {
+    width: 100%;
     height: 600px;
   }
 
@@ -545,4 +584,32 @@ footer h2 {
   }
 
   /*4 small images section end*/
+
+  /*3 small images with description*/
+  .image1 {
+    height: 700px;
+  }
+
+  .image2 {
+    height: 700px;
+  }
+
+  .image3 {
+    height: 700px;
+  }
+
+  .heading {
+    height: 250px;
+  }
+
+  .heading h1 {
+    letter-spacing: 2px;
+    font-size: 40px;
+  }
+
+  .heading p {
+    letter-spacing: 2px;
+    font-size: 30px;
+  }
+    /*3 small images end*/
 }
