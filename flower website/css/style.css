@@ -87,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .favourites h1 {
@@ -119,18 +120,17 @@ h1, h2, h3, h4, h5, h6 {
 /*small image section*/
 
 #small{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  grid-gap: 1.5%;
-  width: 88.5%;
-  height: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
   padding-top: 20px;
-  overflow-y: hidden;
+   margin:0 -15px;
 }
 
-#small{
-  max-width: 100%;
-  margin: 0 auto;
+.columnsmall{
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding:0 15px;
 }
 
 /*individual images*/
@@ -201,6 +201,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 90%;
   height: 100%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   padding-bottom: 50px;
    margin:0 -15px;
@@ -287,10 +288,13 @@ footer h2{
 
 /*media queries*/
 
+
+/*small screens*/
 @media (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
+    height: 100%;
   }
   .imagebig {
     flex: 100%;
@@ -303,11 +307,6 @@ footer h2{
   .navbar {
     display: flex;
     flex-direction: column;
-  }
-  #small{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    height: 220vh;
   }
   #footermenu{
     display: flex;
@@ -324,10 +323,40 @@ footer h2{
     position: absolute;
     top: 30px;
   }
+  #small{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 3px;
+  }
+
+  .columnsmall{
+    flex: 100%;
+    max-width: 100%;
+    padding-bottom: 10px;
+    padding-right: 8px;
+  }
 }
 
-/*medium screens*/
-@media (min-width: 600px) and (max-width: 1000px) {
+/*medium screens */
+@media (min-width: 600px) and (max-width: 900px) {
+  #small{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 20px;
+     margin:0 -15px;
+  }
+  .columnsmall{
+    flex: 100%;
+    max-width: 100%;
+    padding-bottom: 10px;
+    padding-right: 15px;
+  }
+}
+
+/*medium screens */
+@media (min-width: 600px) and (max-width: 1200px) {
   .fa-search{
     position: absolute;
     top: 30px;
@@ -336,16 +365,41 @@ footer h2{
     position: absolute;
     top: 30px;
   }
-  .column {
+  .heading{
+    background-color: #ffffff;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 30px;
+    outline: 1px solid #A9A9A9;   /*border inside of the box*/
+    outline-offset: -10px;
+  }
+  .heading h1{
+    font-size: 95%;
+  }
+  .heading p{
+    font-size: 95%;
+  }
+  .column{
     flex: 50%;
     max-width: 50%;
+    padding:0 15px;
+    height: 600px;
+  }
+  .wrapper {
+    padding-bottom: 0px;
   }
 }
 
-/*laptop*/
-@media (min-width: 900px) and (max-width: 1400px) {
-  #small{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+/*i-phone 5, small screens*/
+@media (max-width: 480px) {
+  .fa-search{
+    position: absolute;
+    top: 100px;
+  }
+  .fa-shopping-cart{
+    position: absolute;
+    top: 100px;
   }
 }
