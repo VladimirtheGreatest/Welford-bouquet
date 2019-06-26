@@ -398,7 +398,7 @@ footer h2 {
   #small {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 90%;
     padding-top: 20px;
     margin: 0 -15px;
   }
