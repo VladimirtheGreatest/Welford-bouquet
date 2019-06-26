@@ -398,7 +398,7 @@ footer h2 {
   #small {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 70%;
     padding-top: 20px;
     margin: 0 -15px;
   }
@@ -411,21 +411,23 @@ footer h2 {
   }
 
   .image1 {
-    height: 600px;
+    height: 500px;
   }
 
   .image2 {
-    height: 600px;
+    height: 500px;
   }
 
   .image3 {
-    height: 600px;
+    height: 500px;
   }
 
   .heading {
-    height: 250px;
+    height: 150px;
   }
-
+  .image3{
+      background: url(../images/img8.jpg)no-repeat top/cover;  /*tablet background bug fix*/
+  }
   /*3 small images end */
   /*footer menu responsive */
   #footermenu {
@@ -501,7 +503,7 @@ footer h2 {
   }
 
   .heading {
-    height: 150px;
+    height: 130px;
   }
 
   .heading h1 {
