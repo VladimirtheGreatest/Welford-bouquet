@@ -14,14 +14,14 @@ body {
   font-family: 'Helvetica', serif;
   font-size: 18px;
   line-height: 1.6;
-  color: 	#A9A9A9;
+  color: #A9A9A9;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background:#ffffff;
+  background: #ffffff;
   overflow: hidden;
   letter-spacing: 2px;
   margin: 0 auto;
@@ -32,8 +32,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 
+/*Global end*/
 /*navigation bar*/
-
 .navbar {
   display: flex;
   justify-content: center;
@@ -60,34 +60,33 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-.icon{
+.icon {
   display: none;
 }
 
-.fa-search{
+.fa-search {
   position: absolute;
   left: 30px;
 }
-.fa-shopping-cart{
+
+.fa-shopping-cart {
   position: absolute;
   right: 30px;
 }
 
+/*navigation bar end*/
 /*preheader logo*/
-
-.preheader h1{
+.preheader h1 {
   font-weight: lighter;
   letter-spacing: 5px;
 }
 
-.preheader{
+.preheader {
   padding-bottom: 20px;
   padding-top: 20px;
 }
 
-
 /*favourites section*/
-
 .favourites {
   width: 100%;
   height: 30vh;
@@ -109,41 +108,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*favourites section end */
-
-/*Big image section*/
-
+/* 2 Big images section*/
 #big {
   display: flex;
   width: 90%;
   padding-top: 20px;
-   margin:0 -15px;
+  margin: 0 -15px;
 }
 
 .imagebig {
   flex: 50%;
-   padding:0 15px;
+  padding: 0 15px;
 }
+
 /*Big image section end*/
-
-/*small image section*/
-
-#small{
+/* 3 small images section*/
+#small {
   display: flex;
   flex-direction: row;
   width: 90%;
   padding-top: 20px;
-   margin:0 -15px;
+  margin: 0 -15px;
 }
 
-.columnsmall{
-  flex: 33.3%;
-  max-width: 33.3%;
-  padding:0 15px;
+.columnsmall {
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
 }
 
 /*individual images*/
-
-.image1{
+.image1 {
   background: url(../images/img7.jpg)no-repeat top/cover;
   background-color: #ffffff;
   height: 500px;
@@ -155,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
-.image2{
+.image2 {
   background: url(../images/img3.jpg)no-repeat top/cover;
   background-color: #ffffff;
   height: 500px;
@@ -167,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
-.image3{
+.image3 {
   background: url(../images/img8.jpg)no-repeat center/cover;
   background-color: #ffffff;
   height: 500px;
@@ -179,8 +174,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
- /*description box for the image*/
-.heading{
+/*description box for the image*/
+.heading {
   background-color: #ffffff;
   width: 90%;
   height: 200px;
@@ -190,41 +185,39 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   margin-bottom: 20px;
   padding: 40px;
-  outline: 1px solid #A9A9A9;   /*border inside of the box*/
+  outline: 1px solid #A9A9A9;
+  /*border inside of the box*/
   outline-offset: -10px;
 }
 
-.heading h1{
+.heading h1 {
   color: #A9A9A9;
   font-weight: lighter;
   letter-spacing: 5px;
 }
 
-.heading p{
+.heading p {
   color: #A9A9A9;
   margin-top: 15px;
   letter-spacing: 5px;
 }
 
 /*small image section end*/
-
 /* 4 small images with headings section*/
-
 .wrapper {
   width: 90%;
   height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 50px;
-   margin:0 -15px;
+  margin: 0 -15px;
 }
 
-.column{
+.column {
   flex: 25%;
   max-width: 25%;
-  padding:0 15px;
-  height: 800px;
+  padding: 0 15px;
+  height: 550px;
 }
 
 .card {
@@ -233,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.card h5{
+.card h5 {
   font-weight: lighter;
   font-size: 18px;
   letter-spacing: 3px;
@@ -241,29 +234,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
 }
 
-.card img{
+.card img {
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 
-.black{
+.black {
   color: #000000;
 }
 
 /*small sale icon*/
-
-.sale{
+.sale {
   width: 100px;
   height: 100px;
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   border-radius: 50%;
   background: #000000;
-
 }
 
-.sale p{
+.sale p {
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -271,9 +262,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 4 small images with headings section end*/
-
 /* footer menu*/
-#footermenu{
+#footermenu {
   border-bottom: 1px #D3D3D3 solid;
   border-top: 1px #D3D3D3 solid;
   display: flex;
@@ -281,11 +271,11 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   width: 100%;
   color: #D3D3D3;
-    transition: 0,7s;
+  transition: 0, 7s;
 }
 
 #footermenu a {
-  color:#A9A9A9;
+  color: #A9A9A9;
   padding: 14px 25px;
   text-decoration: none;
   text-align: center;
@@ -300,8 +290,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   opacity: 1;
 }
-/* end of the footer menu*/
 
+/* end of the footer menu*/
 /*footer*/
 footer ul {
   display: flex;
@@ -312,68 +302,84 @@ footer ul {
   padding-top: 50px;
 }
 
-footer{
-text-align: center;
+footer {
+  text-align: center;
 }
 
-footer h3{
+footer h3 {
   font-weight: lighter;
   color: #A9A9A9;
   letter-spacing: 2px;
   padding-top: 30px;
 }
 
-footer h2{
+footer h2 {
   font-weight: lighter;
-  padding-top:10px;
+  padding-top: 10px;
 }
+
 /* end of the footer*/
-
 /*media queries*/
-
-
 /*small screens*/
 @media (max-width: 600px) {
+
+  /*4 small images adjustement*/
   .column {
     flex: 100%;
     max-width: 100%;
     height: 100%;
+    padding: 0 5px;
   }
+
+  /*4 small images adjustement end*/
+  /* 2 big images responsive */
   .imagebig {
     flex: 100%;
     padding-right: 1.5%;
   }
+
   #big {
     display: flex;
     flex-direction: column;
   }
+
+  /* 2 big images responsive end */
+  /*navbar menu responsive */
   .navbar {
     display: flex;
     flex-direction: column;
   }
-  #footermenu{
+
+  /*navbar menu responsive end */
+  /*footer menu responsive */
+  #footermenu {
     display: flex;
     flex-direction: column;
   }
+
+  /*footer menu responsive end */
   .card {
     margin-bottom: 40px;
   }
-  .fa-search{
+
+  .fa-search {
     position: absolute;
     top: 30px;
   }
-  .fa-shopping-cart{
+
+  .fa-shopping-cart {
     position: absolute;
     top: 30px;
   }
-  #small{
+
+  #small {
     display: flex;
     flex-direction: column;
     width: 90%;
     padding-top: 3px;
   }
 
-  .columnsmall{
+  .columnsmall {
     flex: 100%;
     max-width: 100%;
     padding-bottom: 10px;
@@ -383,69 +389,137 @@ footer h2{
 
 /*medium screens */
 @media (min-width: 600px) and (max-width: 900px) {
-  #small{
+
+  /*3 small images with description */
+  #small {
     display: flex;
     flex-direction: column;
     width: 90%;
     padding-top: 20px;
-     margin:0 -15px;
+    margin: 0 -15px;
   }
-  .columnsmall{
+
+  .columnsmall {
     flex: 100%;
     max-width: 100%;
     padding-bottom: 10px;
     padding-right: 15px;
   }
+
+  /*3 small images with description end */
+  /*footer menu responsive */
+  #footermenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*footer menu responsive end */
 }
 
 /*medium screens */
 @media (min-width: 600px) and (max-width: 1200px) {
-  .fa-search{
+
+  /*icons, navigation bar*/
+  .fa-search {
     position: absolute;
     top: 30px;
   }
-  .fa-shopping-cart{
+
+  .fa-shopping-cart {
     position: absolute;
     top: 30px;
   }
-  .heading{
-    background-color: #ffffff;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 30px;
-    outline: 1px solid #A9A9A9;   /*border inside of the box*/
-    outline-offset: -10px;
-  }
-  .column{
+
+  /*icons, navigation bar end*/
+  /*4 small images adjustement*/
+  .column {
     flex: 50%;
     max-width: 50%;
-    padding:0 15px;
+    padding: 0 15px;
     height: 600px;
   }
-  .wrapper {
-    padding-bottom: 0px;
-  }
-  .heading h1{
+
+  /*4 small images end*/
+  /*Description headings*/
+  .heading h1 {
     letter-spacing: 3px;
     font-size: 95%;
   }
 
-  .heading p{
+  .heading p {
     letter-spacing: 3px;
     font-size: 95%;
   }
+
+  /*Description headings end*/
 }
 
 /*i-phone 5, small screens*/
 @media (max-width: 480px) {
-  .fa-search{
+
+  /*icons, navigation bar*/
+  .fa-search {
     position: absolute;
     top: 100px;
   }
-  .fa-shopping-cart{
+
+  .fa-shopping-cart {
     position: absolute;
     top: 100px;
   }
+
+  /*icons, navigation bar end*/
+  /*3 small images with description*/
+  .image1 {
+    height: 300px;
+  }
+
+  .image2 {
+    height: 300px;
+  }
+
+  .image3 {
+    height: 300px;
+  }
+
+  .heading {
+    height: 150px;
+    overflow-y: hidden;
+  }
+
+  .heading h1 {
+    letter-spacing: 2px;
+    font-size: 90%;
+  }
+
+  .heading p {
+    letter-spacing: 2px;
+    font-size: 90%;
+  }
+
+  /*image allignment*/
+  .columnsmall {
+    padding-right: 5px;
+  }
+
+  /*3 small images with description end*/
+}
+
+/*extra large screen adjustement*/
+@media (min-width: 1400px) {
+
+  /*4 small images section, making them bigger for the big screen*/
+  .card img {
+    width: 100%;
+    height: 600px;
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 15px;
+    height: 800px;
+  }
+
+  /*4 small images section end*/
 }
