@@ -253,6 +253,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   border-radius: 50%;
   background: #000000;
+  webkit-animation: flash 5s infinite;
+  animation: flash 5s infinite;
 }
 
 .sale p {
@@ -361,7 +363,7 @@ footer h2 {
   .card {
     margin-bottom: 40px;
   }
-
+  /*navigation icons */
   .fa-search {
     position: absolute;
     top: 30px;
@@ -371,7 +373,8 @@ footer h2 {
     position: absolute;
     top: 30px;
   }
-
+  /*navigation icons end */
+  /*3 small images*/
   #small {
     display: flex;
     flex-direction: column;
@@ -385,12 +388,13 @@ footer h2 {
     padding-bottom: 10px;
     padding-right: 8px;
   }
+    /*3 small images end*/
 }
 
 /*medium screens */
 @media (min-width: 600px) and (max-width: 900px) {
 
-  /*3 small images with description */
+  /*3 small images with the description */
   #small {
     display: flex;
     flex-direction: column;
@@ -422,7 +426,7 @@ footer h2 {
     height: 250px;
   }
 
-  /*3 small images with description end */
+  /*3 small images end */
   /*footer menu responsive */
   #footermenu {
     display: flex;
@@ -447,7 +451,7 @@ footer h2 {
   }
 
   /*icons, navigation bar end*/
-  /*4 small images adjustement*/
+  /*4 small images adjustment*/
   .column {
     flex: 50%;
     max-width: 50%;
@@ -518,7 +522,7 @@ footer h2 {
   /*3 small images with description end*/
 }
 
-/*extra large screen adjustement*/
+/*extra large screen adjustment*/
 @media (min-width: 1400px) {
 
   /*4 small images section, making them bigger for the big screen*/
