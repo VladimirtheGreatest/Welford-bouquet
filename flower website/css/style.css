@@ -119,7 +119,6 @@ p{
   display: flex;
   width: 90%;
   padding-top: 20px;
-  margin: 0 -15px;
 }
 
 .imagebig {
@@ -134,7 +133,6 @@ p{
   flex-direction: row;
   width: 90%;
   padding-top: 20px;
-  margin: 0 -15px;
 }
 
 .columnsmall {
@@ -217,7 +215,6 @@ p{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 -15px;
 }
 
 .column {
@@ -343,7 +340,7 @@ footer h2 {
   /* 2 big images responsive */
   .imagebig {
     flex: 100%;
-    padding-right: 1.5%;
+    padding: 0; /*position images exactly in the middle once they become column*/
   }
 
   #big {
@@ -393,8 +390,7 @@ footer h2 {
   .columnsmall {
     flex: 100%;
     max-width: 100%;
-    padding-bottom: 10px;
-    padding-right: 8px;
+    padding: 0px 0px 10px 0px;  /*position images exactly in the middle once they become column fix*/
   }
     /*3 small images end*/
 }
@@ -522,11 +518,6 @@ footer h2 {
   .heading p {
     letter-spacing: 2px;
     font-size: 90%;
-  }
-
-  /*image allignment*/
-  .columnsmall {
-    padding-right: 5px;
   }
 
   /*3 small images with description end*/
