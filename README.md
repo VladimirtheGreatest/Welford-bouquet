@@ -10,6 +10,8 @@ Design is responsive. Personally tested on different devices such as i-phone 5, 
 Design is desktop first since I was given an image to follow without specific widths and heights and I could choose my own mobile layout. (considering my desktop is 24inch that should be the closest to the original I guess).
 
 
+  <img src="https://i.imgur.com/z7x20rP.jpg" alt="" style="width:100%">
+
   <img src="https://ga-core.s3.amazonaws.com/production/uploads/program/default_image/7626/101_Intro_HTMLCSSWebDesign.jpg" alt="" style="width:100%">
 
 
